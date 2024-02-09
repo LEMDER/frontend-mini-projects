@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+    color="#111">
+  <title>Planetarium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/planet.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+
+
+
+<body translate="no">
+
+  <nav class="nav">
+    <div class="container">
+      <h1 class="logo"><a href="#">My Planetarium</a></h1>
+      <ul>
+        <li><a href="planet.html" class="current">Planetarium</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="to-do.html">To-do</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="slider" id="slider"
+    style="--img-prev:url(https\:\/\/lh3\.googleusercontent\.com\/4Bn4zdADhWhegRcmxS1xmHxbxIBzEgB8ADfeaCmiwT9iF7y2mN9Wc5L7gFLxUo2bgl3V-97EFrOyE9OXfkvip3pkpNxYe50GiapeT41p7D7tNJm3oEdV8Y-7toGyvz0UZ8VgDACVTUEdzzVVm2NtQSCroSvmo4gL3u0ty-KAyKnah9vIitfw2Rs1MuNzQq6vmzUcw1_4obGAKmk_Nx0dD33RSy1jbT8D61kxERbOu0pHUciywIO2EeUX8iOcJfHHQwVW3lGYcZKSiimGjBUvzHILrSpVZQ1xUlj0U21EeY4Hil1ZaJQaX47hQezcxZj7H8GyWhNv2TzQ7EU8DS3_MonCLxXlnXfk-80nncPa8DxN_UlIzJeOPDiWPSLXFaDJn_ywCutx-0onw5rcSC815_krGHXKt3L_weD5pq_e_2WI3BRZndcR2jOYLz9BiUp52ouDBIDw2OzrDtUgxne9NaQ2tOJwaIR26N1un92ChTLhXZF2F2NoS3Do96TY6A5dP6RsXQzK6G0Z6oj5XtYx-p--PrdP8wiDPAzOqXQkXbJaX8l2qPi3nTYrD8rB-eKyL2E1q9xQ\=w1600-h766); --from-left:2; --img-next:url(https\:\/\/lh3\.googleusercontent\.com\/4Bn4zdADhWhegRcmxS1xmHxbxIBzEgB8ADfeaCmiwT9iF7y2mN9Wc5L7gFLxUo2bgl3V-97EFrOyE9OXfkvip3pkpNxYe50GiapeT41p7D7tNJm3oEdV8Y-7toGyvz0UZ8VgDACVTUEdzzVVm2NtQSCroSvmo4gL3u0ty-KAyKnah9vIitfw2Rs1MuNzQq6vmzUcw1_4obGAKmk_Nx0dD33RSy1jbT8D61kxERbOu0pHUciywIO2EeUX8iOcJfHHQwVW3lGYcZKSiimGjBUvzHILrSpVZQ1xUlj0U21EeY4Hil1ZaJQaX47hQezcxZj7H8GyWhNv2TzQ7EU8DS3_MonCLxXlnXfk-80nncPa8DxN_UlIzJeOPDiWPSLXFaDJn_ywCutx-0onw5rcSC815_krGHXKt3L_weD5pq_e_2WI3BRZndcR2jOYLz9BiUp52ouDBIDw2OzrDtUgxne9NaQ2tOJwaIR26N1un92ChTLhXZF2F2NoS3Do96TY6A5dP6RsXQzK6G0Z6oj5XtYx-p--PrdP8wiDPAzOqXQkXbJaX8l2qPi3nTYrD8rB-eKyL2E1q9xQ\=w1600-h766);">
+    <div class="slider__content" id="slider-content"
+      style="transform: translateZ(8.519vw) rotateX(-5.97522deg) rotateY(-2.70958deg);">
+      <div class="slider__images">
+        <div class="slider__images-item" data-id="1">
+          <img src=" img/planet-gfba0c43e8_1920.jpg">
+        </div>
+        <div class="slider__images-item slider__images-item--active" data-id="2">
+          <img src="img/moon5.jpg" style="transform: translateX(0.270958em) translateY(-0.597522em);"></div>
+        <div class="slider__images-item" data-id="3">
+          <img src="img/planet-3290590.jpg" style="transform: translateX(0.692874em) translateY(0.208069em);">
+        </div>
+        <div class="slider__images-item" data-id="4">
+          <img src="img/saturn2.jpg">
+        </div>
+        <div class="slider__images-item" data-id="5">
+          <img src="img/mars.png">
+        </div>
+        <div class="slider__images-item" data-id="6">
+          <img src="img/venera3.jpg">
+        </div>
+      </div>
+      <div class="slider__text">
+        <div class="slider__text-item" data-id="1">
+          <div class="slider__text-item-head">
+            <h3>Earth</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Третья планета от Солнца и пятая по величине из восьми планет Солнечной системы. Иногда ее называют Голубой Планетой. Земля является единственным известным местом где существует жизнь”</p>
+          </div>
+        </div>
+        <div class="slider__text-item slider__text-item--active" data-id="2">
+          <div class="slider__text-item-head">
+            <h3>Moon</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Единственный естественный спутник Земли. Самый близкий к Солнцу спутник планеты. Второй по яркости объект на земном небосводе после Солнца и пятый по величине естественный спутник планеты Солнечной системы.”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="3">
+          <div class="slider__text-item-head">
+            <h3>Mercury</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Является первой планетой от.Солнца, а также самой
+              маленькой и плотной планетой в Солнечной системе.
+              Меркурий это планета контрастов, температура на её
+              поверхности колеблется от -180 до +430 градусов
+              Цельсия.”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="4">
+          <div class="slider__text-item-head">
+            <h3>Saturn</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Шестая планета от Солнца и вторая по величине планета
+              в нашей Солнечной системе. Несмотря на свои размеры,
+              плотность Сатурна настолько мала, что даже у обычной
+              воды плотность больше”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="5">
+          <div class="slider__text-item-head">
+            <h3>Mars</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Четвертая планета от Солнца, названная в честь римского
+              бога войны - Марса. Планету часто называют "Красной
+              планетой" из-за обилия железосодержащей пыли на
+              поверхности. На Марсе находится самая высокая гора в
+              Солнечной системе - Олимп, высотой около 27
+              километров”</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="6">
+          <div class="slider__text-item-head">
+            <h3>Venera</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>“Вторая планета от Солнца, которую часто называют
+              сестрой Земли в связи с тем, что у нее много общего с
+              нашей планетой. Тем не менее, сильный парниковый
+              эффект делает Венеру самым горячим местом в
+              Солнечной системе.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider__nav">
+      <div class="slider__nav-arrows">
+        <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+        <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+      </div>
+      <div class="slider__nav-dots" id="slider-dots">
+        <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+        <div class="slider__nav-dot" data-id="2"></div>
+        <div class="slider__nav-dot" data-id="3"></div>
+        <div class="slider__nav-dot" data-id="4"></div>
+        <div class="slider__nav-dot" data-id="5"></div>
+        <div class="slider__nav-dot" data-id="6"></div>
+
+      </div>
+    </div>
+  </div>
+  <script src="script/planet.js"></script>
+
+</body>
+
+</html>

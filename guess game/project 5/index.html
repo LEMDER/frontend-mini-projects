@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUESS NUMBER GAME</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="bodyy">
+	<header>
+		<button id="reset">Again!</button>
+		<p class="header-info">Catch the number!</p>
+		<p class="header-info" id="outputText">Start catching...</p>
+	</header>
+
+	<div class="divider">
+        <div class="line"></div>
+    </div>
+
+    <div class="container">
+	<div id="main-input">
+		<input type="text" name="inputNumber" id="userInput" />
+		<button id="btn">Check!</button>
+	</div>
+
+	<div class="main-info">
+		<div class="main-info-text"><p>Your score: <p id="score">0</p></p></div>
+		<div class="main-info-text"><p>Highscore: <p id="highscore">0</p></p></div>
+	</div>
+	</div>
+
+
+
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	let btn = document.getElementById('btn');
+	let output = document.getElementById('outputText');
+	let secretNumber = [Math.floor(Math.random()*21)];
+	console.log(secretNumber);
+
+	let element = document.getElementById('bodyy');
+	let inputStyle = document.getElementById('userInput');
+	let reset = document.getElementById('reset');
+
+	let scoreText = document.getElementById('score');
+	let score = 0;
+	let highscoreText = document.getElementById('highscore');
+	let highscore = 0;
+
+btn.addEventListener('click', function(){
+	let input = document.getElementById('userInput').value;
+	if(input == secretNumber){
+		output.innerHTML = `Correct number!`;
+		element.style.backgroundColor = '#60b445';
+		inputStyle.style.backgroundColor = '#60b445';
+		score++;
+		secretNumber = [Math.floor(Math.random()*21)];
+		console.log(secretNumber);
+	}
+	else if(input < secretNumber){
+		output.innerHTML = `Too low!`;
+	}
+	else if(input > secretNumber){
+		output.innerHTML = `Too high!`;
+	}
+	scoreText.innerHTML = score;
+	if(score > highscore){
+		highscore = score;
+	}
+
+	highscoreText.innerHTML = highscore;
+})
+
+reset.addEventListener('click', function() {
+	secretNumber = [Math.floor(Math.random()*21)];
+	console.log(secretNumber);
+	element.style.backgroundColor = '#4b3131';
+	inputStyle.style.backgroundColor = '#4b3131';
+	scoreText.innerHTML = '0';
+	output.innerHTML = 'Start catching...';
+})
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BANK APPLICATION</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container" id="loginPage" style="display: block;">
+	<div id="window">
+		<p class="login-info">Please write your phone number and password</p>
+		<div class="reg-form">
+			<form action="index.html" name="f1" >
+				<input type="text" name="login" id="login" placeholder="(7xx)-xx-xx" class="reg-input">
+				<input type="password" placeholder="PIN code" name="pincode" id="pincode" class="reg-input">
+				<input onclick="Login()" type="button" class="reg-input" id="submit" value="Log in">
+			</form>	
+		</div>
+	</div>
+	</div>
+
+
+	<div class="container" id="mainPage" style="display: none;">
+		
+		<header>
+			<div class="header-content">
+				<p class="info-text" id="info-name">Name</p>
+				<div class="header-info-balance">
+				<p class="info-text">CURRENT BALANCE: <p class="info-text" id="info-balance">0</p><p class="info-text"> KZT</p></p>
+				<p></p>
+				</div>
+			</div>
+			
+		</header>
+		<main>
+			<div class="transfer">
+				<div class="transfer-main">
+					<h2 class="title">Transfer money</h2>
+					<input class="input-transf" type="text" name="number" placeholder="Phone number" id="transferNumber">
+					<input class="input-transf" type="text" name="amount" placeholder="Amount" id="transferAmount">
+					<input onclick="Transfer()" type="button" value="Confirm">
+					<div class="history">
+						<p class="history-text">Deposit 5000 KZT</p>
+						<p class="history-text">Transfer 10000 KZT</p>
+					</div>
+
+				</div>
+				
+			</div>
+
+			<div class="loan">
+				<div class="transfer-main">
+					<h2 class="title">Request loan</h2>
+					<input class="input-transf" type="number" name="loan" placeholder="Amount" id="loanAmount">
+					<button onclick="Loan()">Confirm</button>
+				</div>
+			</div>
+
+			<div class="close-acc">
+				<div class="transfer-main">
+					<h2 class="title">Close account</h2>
+					<input class="input-transf" type="text" name="number" placeholder="Phone number" id="numberClose">
+					<input class="input-transf" type="password" name="" placeholder="****" id="pinClose">
+					<button onclick="Close()">Confirm</button>
+				</div>
+			</div>
+
+			
+		</main>
+
+
+	</div>
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylee.css" id="theme">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
+	<title>Account</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<img src="images/ruth.png" width="10%">
+
+				<nav class="nav">
+					<a class="nav__link" href="index.html">SHOP</a>
+					<a class="nav__link" href="about.html">FORUM</a>
+					<a class="nav__link" href="support.html">SUPPORT</a>
+					<a class="nav__link" href="account.html">ACCOUNT</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- <div class="button-flex">
+		<button class="theme" id="switchMode">Theme</button>
+	</div> -->
+
+	<!-- <div class="register-flex">
+		<button onclick="show('block')" class="regbttn">LOG IN</button>
+	</div> -->
+
+	<!-- <div onclick="show('none')" id="gray"></div>
+	<div id="window">
+		<img class="close" src="images/close.png" alt="x" onclick="show('none')">
+		<div class="reg-form">
+			<form action="index.html" name="f1" >
+				<input type="text" name="login" placeholder="Login" class="reg-input">
+				<input type="password" placeholder="Password" name="password" class="reg-input">
+				<input type="submit" name="sub" value="Log in" class="reg-input" id="submit">
+			</form>	
+		</div>
+	</div> -->
+
+	<form action="/check.php" method="post">
+  <div class="register">
+    <h1 class="regist-h1">Register</h1>
+
+    <hr>
+    <label for="email" class="text_link"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw" class="text_link"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat" class="text_link"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <button type="submit" id="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+	<!-- <div class="register">
+		<h1 class="hhh">Registration</h1>
+		<div class="reg-flex">
+		<form action="" method="post">
+			<input type="text" class="form-control" name="login" id="login" placeholder="Login" class="reg-input2"><br>
+			<input type="text" class="form-control" name="name" id="name" placeholder="Name" class="reg-input2"><br>
+			<input type="password" class="form-control" name="pass" id="pass" placeholder="Password" class="reg-input2"><br>
+			<button class="btn btn-success" type="submit" class="reg-input2">Register</button>
+		</form>
+		</div>
+	</div> -->
+
+<script type="text/javascript">
+	let submit = document.getElementById("submit")
+	submit.onclick = function() {
+	alert("Successfully loged in")
+}
+</script>
+</body>
+</html>

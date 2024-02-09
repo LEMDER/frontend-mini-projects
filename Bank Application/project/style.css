@@ -1,0 +1,168 @@
+body{
+	font-family:sans-serif;
+
+	background-image: url(img/kira.png);
+
+/*	background: #e7e7e7;*/
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.container {
+	width: 100%;
+	display: block;
+}
+
+/* REGISTRATION PAGE */
+#window{
+	width: 350px;
+	height: 170px;
+	margin: 40px auto;
+	background: #fff;
+	border: 1px solid #c0c0c0;
+	border-radius: 15px;
+	z-index: 150;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 270px;
+	bottom: 0;
+	transition: 1s;
+}
+
+.reg-form{
+	width: 275px;
+	margin: 0 auto 20px auto;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.reg-input{
+	width: 260px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.login-info{
+	font-size: 15px;
+	margin-left: 10px;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+
+
+/* Main page */
+
+#mainPage{
+	background-color: #fff;
+	height: 730px;
+}
+
+.info-text{
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 39px;
+	color: #000000;
+	text-shadow: 0px 4px 4px #8D58F9;
+}
+
+.header-info-balance{
+	display: flex;
+}
+
+header{
+	height: 80px;
+	background-color: #cacaca;
+	left: 0;
+	top: 0;
+	background: linear-gradient(209.68deg, #1F2634 -4.34%, #8AACD2 103.09%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-content{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+
+}
+
+.transfer{
+	background: linear-gradient(180deg, #ff9800 0%, #ffc107 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 600px;
+	height: 150px;
+	margin-left: 80px;
+	margin-top: 70px;
+}
+
+.loan{
+	background: linear-gradient(180deg, #4caf50 0%, #8bc34a 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 600px;
+	height: 150px;
+	margin-left: 80px;
+	margin-top: 30px;
+}
+
+.close-acc{
+	background: linear-gradient(180deg, #f44336 0%, #cc7657 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 600px;
+	height: 150px;
+	margin-left: 80px;
+	margin-top: 30px;
+}
+
+.title{
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+	color: #000000;
+}
+
+.transfer-main{
+	margin-left: 50px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.input-transf{
+	height: 20px;
+	font-size: 15px;
+}
+
+.history{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background: #d4d4d4;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 600px;
+	height: 325px;
+	margin-left: 700px;
+	padding-top: 100px;
+}
+
+.history-text{
+	font-size: 20px;
+	margin-left: 30px;
+	font-weight: solid;
+	margin-top: 10px;
+}
+
+
+

@@ -1,0 +1,327 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(img/cosmos.png);
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;    
+    background-size: 100%;
+}
+
+img{
+	cursor: pointer;
+}
+
+.sun img{
+	height: 120%;
+	width: 120%;
+	transition: all 1s;
+}
+
+.sun.active img{
+	width: 130%;
+	height: 130%;
+}
+
+.sun.active .sun-text{
+	display: block;
+}
+
+.sun{
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	position: absolute;
+	left: 70%;
+	top: 47%;
+	transform: translate(-50%, -50%);
+}
+
+.sun-text{
+	width: 400px;
+	margin-top: 29.9%;
+	margin-left: 15%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.show-sun {
+	display: block;
+}
+
+.mercury img{
+	height: 120%;
+	width: 120%;
+	transition: all 1s;
+}
+
+.mercury.active img{
+	width: 600%;
+	height: 600%;
+}
+
+.mercury.active .mercury-text{
+	display: block;
+}
+.mercury{
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+	position: absolute;
+	left: 62%;
+	top: 48%;
+	transform: translate(-50%, -50%);
+	transition: all 1s;
+}
+
+.mercury-text{
+	width: 400px;
+	margin-top: 26%;
+	margin-left: 39%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.venus img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+
+.venus.active img{
+	width: 600%;
+	height: 600%;
+}
+
+.venus.active .venus-text{
+	display: block;
+}
+
+.venus{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: absolute;
+	left: 59%;
+	top: 49%;
+	transform: translate(-50%, -50%);
+}
+
+.venus-text{
+	width: 400px;
+	margin-top: 34%;
+	margin-left: 35%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.earth img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+
+.earth.active img{
+	width: 500%;
+	height: 500%;
+	top: 30%;
+}
+
+.earth.active .earth-text{
+	display: block;
+}
+
+.earth{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 54.4%;
+	top: 48%;
+	transform: translate(-50%, -50%);	
+}
+
+.earth-text{
+	width: 400px;
+	margin-top: 27%;
+	margin-left: 39%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.mars img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+
+.mars.active img{
+	height: 600%;
+	width: 600%;
+}
+
+.mars.active .mars-text{
+	display: block;
+}
+
+.mars{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 48.5%;
+	transform: translate(-50%, -50%);	
+}
+
+.mars-text{
+	width: 400px;
+	margin-top: 27%;
+	margin-left: 39%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.jupiter img{
+	height: 190%;
+	width: 190%;
+	transition: all 1s;
+}
+
+.jupiter.active img{
+	width: 400%;
+	height: 400%;
+}
+
+.jupiter.active .jupiter-text{
+	display: block;
+}
+
+.jupiter{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 44%;
+	top: 47%;
+	transform: translate(-50%, -50%);	
+}
+
+.jupiter-text{
+	width: 400px;
+	margin-top: 27%;
+	margin-left: 33%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.saturn img{
+	width: 200%;
+	height: 100%;
+	transition: all 1s;
+}
+
+.saturn.active img{
+	width: 400%;
+	height: 200%;
+}
+
+.saturn.active .saturn-text{
+	display: block;
+}
+
+.saturn{
+	height: 96px;
+	width: 96px;
+	border-radius: 50%;
+	position: absolute;
+	left: 32%;
+	top: 48.8%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+.saturn-text{
+	width: 400px;
+	margin-top: 27%;
+	margin-left: 28%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.uranus img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+
+.uranus.active img{
+	width: 400%;
+	height: 400%;
+}
+
+.uranus.active .uranus-text{
+	display: block;
+}
+
+.uranus{
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	position: absolute;
+	left: 25%;
+	top: 48.8%;
+	transform: translate(-50%, -50%);	
+}
+
+.uranus-text{
+	width: 400px;
+	margin-top: 27%;
+	margin-left: 21%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+
+.neptune img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+
+.neptune.active img{
+	width: 500%;
+	height: 500%;
+}
+
+.neptune.active .neptune-text{
+	display: block;
+}
+
+.neptune{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 19%;
+	top: 48.8%;
+	transform: translate(-50%, -50%);	
+}
+
+.neptune-text{
+	width: 400px;
+	margin-top: 27%;
+	margin-left: 15%;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+}
+

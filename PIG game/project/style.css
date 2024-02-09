@@ -1,0 +1,92 @@
+body{
+	background: linear-gradient(45deg, #4aca2c, #0c6adb);
+	font-weight: 400;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+*{
+	font-family: 'Electrolize', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.container {
+	width: 100%;
+}
+
+#outputText{
+	position: relative;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.main-flex{
+	display: flex;
+}
+
+.player1{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+	margin-top: 80px;
+
+}
+
+.player2{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 700px;
+	margin-top: 80px;
+}
+
+h2{
+	color: white;
+	font-size: 60px;
+}
+
+p{
+	color: white;
+	font-size: 45px;
+}
+
+.display{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.display button{
+	width: 140px;
+	height: 50px;
+	font-size: 25px;
+}
+
+.btn-flex{
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+}
+
+.dice{
+	position: absolute;
+	border-radius: 28px;
+	display: flex;
+	bottom: 250px;
+}
+
+.main-info-text{
+	display: flex;
+}
+
+#btn-hold{
+	top: 5px;
+}
+

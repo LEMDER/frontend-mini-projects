@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Menu</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+	<div class="navigation">
+		<div class="toggle"><span></span></div>
+		<ul>
+			<li style="--i:0;"><a href="#">Home</a></li>
+			<li style="--i:1;"><a href="#">About</a></li>
+			<li style="--i:2;"><a href="#">Portfolio</a></li>
+			<li style="--i:3;"><a href="#">Services</a></li>
+			<li style="--i:4;"><a href="#">Blog</a></li>
+			<li style="--i:5;"><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		let navigation = document.querySelector('.navigation');
+		document.querySelector('.toggle').onclick = function() {
+			this.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

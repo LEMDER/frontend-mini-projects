@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ToDo List | Using HTML - CSS , JS | 2020</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style-to-do.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <h1 class="logo"><a href="#">My To-Do</a></h1>
+      <ul>
+        <li><a href="planet.html">Planetarium</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="to-do.html" class="current">To-do</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="todoList">
+    <div class="cover-img">
+      <div class="cover-inner">
+        <h3 id="dayName">For a week</h3>
+      </div>
+    </div>
+
+    <div class="content">
+      <form class="add">
+        <input type="text" name="add" placeholder="Add item...">
+        <div class="input-buttons">
+          <a href="#0" class="add-todo">
+            <i class="fas fa-plus add plus-icon"></i>
+          </a>
+        </div>
+      </form>
+      <ul class="todos align">
+        <li>
+
+          <input type="checkbox" id="todo_1">
+          <label for="todo_1">
+            <span class="check"></span>
+            Do the lab work
+          </label>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+
+        <li>
+          <input type="checkbox" id="todo_2">
+          <label for="todo_2">
+            <span class="check"></span>
+            Finalize the site
+          </label>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+
+        <li>
+          <input type="checkbox" id="todo_3">
+          <label for="todo_3">
+            <span class="check"></span>
+            Take a walk with a girl
+          </label>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+
+        <li>
+          <input type="checkbox" id="todo_4">
+          <label for="todo_4">
+            <span class="check"></span>
+            Read Stephen King's book
+          </label>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  
+
+</body>
+
+<script src="script/to-do.js"></script>
+
+</html>

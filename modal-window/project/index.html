@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal window</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+	
+	<div class="register-flex">
+		<button onclick="show('block')" class="regbttn">BUTTON 1</button>
+	</div>
+
+	<div onclick="show('none')" id="gray"></div>
+	<div id="window">
+		<img class="close" src="img/close.png" alt="x" onclick="show('none')">
+		<div class="reg-form">
+			<form action="index.html" name="f1" >
+				<input type="text" name="login" placeholder="Login" class="reg-input">
+				<input type="password" placeholder="Password" name="password" class="reg-input">
+				<input type="submit" name="sub" value="Log in" class="reg-input" id="submit">
+			</form>	
+		</div>
+	</div>
+
+	<div class="register-flex">
+		<button onclick="show2('block')" class="regbttn">BUTTON 2</button>
+	</div>
+
+	<div onclick="show2('none')" id="gray-2"></div>
+	<div id="window-2">
+		<img class="close" src="img/close.png" alt="x" onclick="show2('none')">
+		<div class="reg-form">
+			<form action="index.html" name="f1" >
+				<h3 class="reg-input">Title</h3>
+				<p class="reg-input">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			</form>	
+		</div>
+	</div>
+
+	<div class="register-flex">
+		<button onclick="show3('block')" class="regbttn">BUTTON 3</button>
+	</div>
+
+	<div onclick="show3('none')" id="gray-3"></div>
+	<div id="window-3">
+		<img class="close" src="img/close.png" alt="x" onclick="show3('none')">
+		<div class="reg-form">
+			<form action="index.html" name="f1" >
+				<h3 class="reg-input">Modal window</h3>
+				<p class="reg-input">For closing the modal window click "x" or click outside areo of modal window.</p>
+			</form>	
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+	// functions "show" will show hidden modal window and gray background
+
+	function show(state){
+	document.getElementById('window').style.display = state;
+	document.getElementById('gray').style.display = state;
+	}
+	let submit = document.getElementById("submit")
+	submit.onclick = function() {
+		
+		alert("Successfully loged in")
+	}
+
+	function show2(state){
+	document.getElementById('window-2').style.display = state;
+	document.getElementById('gray').style.display = state;
+	}
+
+	function show3(state){
+	document.getElementById('window-3').style.display = state;
+	document.getElementById('gray').style.display = state;
+	}
+
+</script>
+</html>

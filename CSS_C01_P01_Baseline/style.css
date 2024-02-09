@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	background: #333;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	max-width: 960px;
+  margin: 0 auto;
+
+}
+
+.block{
+	border: 4px solid red;
+	background: red;
+}
+
+.head-block{
+	position: relative;
+	border: 20px solid #eeeeee;
+	background: #eeeeee;
+	background-image: url(images/banner4.jpg);
+}
+
+.head-block2{
+	position: relative;
+	border: 20px solid #eeeeee;
+	background: #eeeeee;
+	background-image: url(images/banner5.jpg);
+}
+
+.head-block3{
+	position: relative;
+	border: 20px solid #eeeeee;
+	background: #eeeeee;
+	background-image: url(images/banner2.jpg);
+}
+
+.head-block4{
+	position: relative;
+	border: 20px solid #eeeeee;
+	background: #eeeeee;
+	background-image: url(images/banner8.jpg);
+}
+
+.logo{
+	margin-left: 1200px;
+
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+}
+
+.nav__link{
+	color: #fff;
+	border: 1px solid black;
+  padding: 5px 46px;
+  background-color: rgb(145, 140, 140);
+  margin: 0px -2px;
+}
+
+.maks{
+	background: black;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+}
+
+.intro{
+	display: flex;
+	justify-content: center;
+}
+
+.picture{
+	position: relative;
+}
+
+h1{
+	color: #eeeeee;
+	font-weight: bold;
+}
+
+h2{
+	color: #eeeeee;
+	font-weight: bold;
+}
+
+h3{
+	color: #eeeeee;
+	font-weight: bold;
+}
+
+.def-text{
+	color: #aaaaaa;
+}
+
+.video{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer{
+  background-color: #111111;
+}
+
+.footer_row{
+  padding: 25px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+}
+.border_left{
+  border-left: 2px solid rgb(173, 171, 171);
+  padding: 14px 10px;
+  height: 155px;
+}
+.border-left_none{
+  padding: 14px 10px;
+}
+.footer_item{
+  width: 115px;
+}
+.footer_item-title{
+  color: #aaaaaa;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.footer_item span{
+  color: #aaaaaa;
+  font-size: 15px;
+  
+}
+.footer_item a{
+  text-decoration: underline;
+  color: #aaaaaa;
+}
+
+.header_menu a:hover{
+  background-color: rgb(104, 100, 100);
+  transition: 0.5s;
+}
+
+.footer-citate{
+	border: 2px solid #444444;
+	background: #444444;
+}
+
+.footer-flex{
+	display: flex;
+	justify-content: center;
+}
+
+.footer__text{
+	color: #eeeeee;
+}
+
+.rights{
+	display: flex;
+	justify-content: center;
+}
+
+.rights_text{
+	color: #aaaaaa;
+	font-size: 12px;
+}

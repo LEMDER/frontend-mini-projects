@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylee.css" id="theme">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<title>CreativeStudio</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<img src="images/logo.png">
+
+				<nav class="nav">
+					<a class="nav__link" href="#home">HOME</a>
+					<a class="nav__link" href="about.html">ABOUT</a>
+					<a class="nav__link" href="portfolio.html">PORTFOLIO</a>
+					<a class="nav__link" href="#services">SERVICES</a>
+					<a class="nav__link" href="#">BLOG</a>
+					<a class="nav__link" href="#">CONTACT</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="button-flex">
+		<button class="theme" id="switchMode">Theme</button>
+	</div>
+
+	<div class="register-flex">
+		<button onclick="show('block')" class="regbttn">LOG IN</button>
+	</div>
+
+	<div onclick="show('none')" id="gray"></div>
+	<div id="window">
+		<img class="close" src="images/close.png" alt="x" onclick="show('none')">
+		<div class="reg-form">
+			<form action="index.html" name="f1" >
+				<input type="text" name="login" placeholder="Login" class="reg-input">
+				<input type="password" placeholder="Password" name="password" class="reg-input">
+				<input type="submit" name="sub" value="Log in" class="reg-input" id="submit">
+			</form>	
+		</div>
+	</div>
+
+
+
+	<div class="divider">
+        <div class="line"></div>
+    </div>
+	
+	<div class="intro">
+		<div class="container">
+			<div class="pic">
+				<img width="100%" src="images/header-image.jpg" alt="lab-logo">
+				<div class="contain-inner2"></div>
+				<p class="banner-text">HERE'S SOME NICE WORK</p>
+				<a class="banner-button" href="portfolio.html">VIEW PORTFOLIO»</a>
+			</div>	
+		</div>
+	</div>
+
+	<div class="divider">
+        <div class="line"></div>
+    </div>
+
+
+
+    <div class="mainblocks">
+    	<div class="container">
+    		<div class="headlines">
+    			<div class="block-flex">
+    				<div class="block-link">
+    					<div class="icon-arrow">
+    						<img src="images/arrow.png" alt="">
+    					</div>
+    					<h2 class="headline__item">ABOUT US</h2>
+    				</div>
+
+    				<div class="black-line"></div>
+    					<p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
+
+    					<a href="#" class="link-more">READ MORE</a>
+    			</div>
+
+    			<div class="block-flex">
+    				<div class="block-link">
+    					<div class="icon-arrow">
+    						<img src="images/arrow.png" alt="">
+    					</div>
+    					<h2 class="headline__item">OUR BENEFITS</h2>
+    				</div>
+    				<div class="black-line"></div>
+    				<div class="holder">
+    					<div class="block-link">
+    						<div class="icon-checkbox">
+    							<img src="images/check.png" alt="">
+    						</div>
+    						<p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</p>
+    					</div>
+    					<div class="block-link">
+    						<div class="icon-checkbox">
+    							<img src="images/check.png" alt="">
+    						</div>
+    						<p class="block-text">Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat</p>
+    					</div>
+    					<div class="block-link">
+    						<div class="icon-checkbox">
+    							<img src="images/check.png" alt="">
+    						</div>
+    						<p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="block-flex">
+    				<div class="block-link">
+    					<div class="icon-arrow">
+    						<img src="images/arrow.png" alt="">
+    					</div>
+    					<h2 class="headline__item">TESTIMONIALS</h2>
+    				</div>
+    				<div class="black-line"></div>
+    				<p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque.</p>
+
+    				<p class="link-author"><i>Rafi, Graphicsfuel.com</i></p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+    <div class="divider">
+        <div class="line"></div>
+    </div>
+
+
+    <div class="portfolio">
+    	<div class="container">
+    	<div class="block-link">
+    		<div class="icon-arrow">
+    			<img src="images/arrow.png" alt="">
+    		</div>
+    		<h2 class="headline__item">OUR PORTFOLIO</h2>
+    	</div>
+
+    	<div class="portfolio-img">
+    		<div class="portfolio__item">
+    			<img src="images/portfolio_1.jpg" alt="">
+    			<a href="#" class="portfolio-image-link">VIEW »</a>
+    		</div>
+
+    		<div class="portfolio__item">
+    			<img src="images/portfolio_2.jpg" alt="">
+    			<a href="#" class="portfolio-image-link">VIEW »</a>
+    		</div>
+
+    		<div class="portfolio__item">
+    			<img src="images/portfolio_3.jpg" alt="">
+    			<a href="#" class="portfolio-image-link">VIEW »</a>
+    		</div>
+
+    		<div class="portfolio__item">
+    			<img src="images/portfolio_4.jpg" alt="">
+    			<a href="#" class="portfolio-image-link">VIEW »</a>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+
+    <div class="divider">
+        <div class="line"></div>
+    </div>
+
+
+    <div class="tale">
+    	<div class="container">
+    		<div class="tale-block">
+    			<div class="tale-flex">
+    				<div class="tale-links">
+    					<div class="icon-tale">
+    						<img src="images/arrow_small.png" alt="">
+    					</div>
+    					<h2 class="headline-small">BLOG UPDATES</h2>
+    				</div>
+    				<p class="tale-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero.</p>
+    			</div>
+    		
+    			<div class="contact-flex">
+    				<div class="icon-links">
+    				<div class="dior-flex">
+    					<div class="icon-tale">
+    						<img src="images/arrow_small.png" alt="">
+    					</div>
+    					<h2 class="headline-small">CONNECT WITH US</h2>
+    				</div>
+
+    					<div class="logos-flex">
+    						<div class="icon-links">
+    							<a href="https://twitter.com/?lang=ru">
+    								<img src="images/twitter.png" alt="">
+    							</a>
+    							<a href="https://ru-ru.facebook.com/">
+    								<img src="images/facebook.png" alt="">
+    							</a>
+    							<a href="https://flickr.com/">
+    								<img src="images/flickr.png" alt="">
+    							</a>
+    							<a href="https://rss.com/">
+    								<img src="images/rss.png" alt="">
+    							</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="footer">
+    	<div class="end">
+    		<div class="container">
+    			<div class="space">
+    				<div class="navbar">
+    					<a class="footer__link" href="index.html">Home |</a>
+    					<a class="footer__link" href="about.html">About Us |</a>
+    					<a class="footer__link" href="portfolio.html">Portfolio |</a>
+    					<a class="footer__link" href="#">Services |</a>
+    					<a class="footer__link" href="#">Blog |</a>
+    					<a class="footer__link" href="#">Contact Us |</a>
+    					<p class="licences">© 2010 CreativeStudio. All Rights Reserved</p>
+    				</div>
+    				<div class="logo-footer">
+    					<img src="images/logo-footer.png" alt="">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
